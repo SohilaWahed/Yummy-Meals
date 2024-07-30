@@ -1,5 +1,5 @@
 # Yummy-Meals
-Welcome to the Meals Display Website! This project allows users to explore various meals, including their recipes, preparation methods, and other details.It features a search functionality that allows users to find meals by their first letter.
+Welcome to the Meals Display Website! This project allows users to explore various meals, including their recipes, preparation methods, and other details.It features a search functionality that allows users to find meals by their first letter, and display meals organized by categories, areas, and ingredients.
 
 ## Features
 
