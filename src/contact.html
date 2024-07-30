@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- tailwind -->
+    <link href="css/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-black">
+
+    <section class="side-bar"></section>
+
+    <section class=" h-screen flex flex-row justify-center items-center">
+        <div class="inputs text-black w-3/4 m-auto pt-6 md:grid md:grid-cols-2 md:gap-4">
+            <div class="mb-3">
+                <input id="name"
+                    class=" w-full rounded-md px-3 py-1 border-[1px] border-inherit border-solid focus:outline-none focus:shadow-[0_0_0_4px_rgba(13,110,253,0.25)]"
+                    type="text" placeholder="Enter Your Name" autocomplete="off">
+                <div id="nameAlert" class="bg-red-200 text-red-700 w-100 hidden mt-1 rounded-md p-3 text-center d-none">
+                    Special characters and numbers not allowed
+                </div>
+            </div>
+            <div class="mb-3">
+                <input id="email"
+                    class=" w-full rounded-md px-3 py-1 border-[1px] border-inherit border-solid focus:outline-none focus:shadow-[0_0_0_4px_rgba(13,110,253,0.25)]"
+                    type="text" placeholder="Enter Your Email" autocomplete="off">
+                <div id="nameAlert" class="bg-red-200 text-red-700 w-100 hidden mt-1 rounded-md p-3 text-center d-none">
+                    Email not valid *exemple@yyy.zzz
+                </div>
+            </div>
+            <div class="mb-3">
+                <input id="phone"
+                    class=" w-full rounded-md px-3 py-1 border-[1px] border-inherit border-solid focus:outline-none focus:shadow-[0_0_0_4px_rgba(13,110,253,0.25)]"
+                    type="text" placeholder="Enter Your Phone" autocomplete="off">
+                <div id="nameAlert" class="bg-red-200 text-red-700 w-100 hidden mt-1 rounded-md p-3 text-center d-none">
+                    Enter valid Phone Number
+                </div>
+            </div>
+            <div class="mb-3">
+                <input id="Age"
+                    class=" w-full rounded-md px-3 py-1 border-[1px] border-inherit border-solid focus:outline-none focus:shadow-[0_0_0_4px_rgba(13,110,253,0.25)]"
+                    type="Number" placeholder="Enter Your Age" autocomplete="off">
+                <div id="nameAlert" class="bg-red-200 text-red-700 w-100 hidden mt-1 rounded-md p-3 text-center d-none">
+                    Enter valid age
+                </div>
+            </div>
+            <div class="mb-3">
+                <input id="password"
+                    class=" w-full rounded-md px-3 py-1 border-[1px] border-inherit border-solid focus:outline-none focus:shadow-[0_0_0_4px_rgba(13,110,253,0.25)]"
+                    type="password" placeholder="Enter Your password" autocomplete="off">
+                <div id="nameAlert" class="bg-red-200 text-red-700 w-100 hidden mt-1 rounded-md p-3 text-center d-none">
+                    Enter valid password *Minimum eight characters, at least one letter and one number:*
+                </div>
+            </div>
+            <div class="mb-3">
+                <input id="repassword"
+                    class=" w-full rounded-md px-3 py-1 border-[1px] border-inherit border-solid focus:outline-none focus:shadow-[0_0_0_4px_rgba(13,110,253,0.25)]"
+                    type="password" placeholder="Repassword" autocomplete="off">
+                <div id="nameAlert" class="bg-red-200 text-red-700 w-100 hidden mt-1 rounded-md p-3 text-center d-none">
+                    Enter valid repassword
+                </div>
+            </div>
+            <div class="col-span-2 text-center">
+                <button class="bg-transparent rounded text-[rgb(220,53,69)] p-1 border-[1px] border-[rgb(220,53,69)] " disabled="true">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="./js/contact.js"></script>
+</body>
+
+</html>

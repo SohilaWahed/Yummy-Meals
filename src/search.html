@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- tailwind -->
+    <link href="css/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-black">
+    <section class="side-bar"></section>
+    <div class="inputs text-white w-3/4 m-auto pt-6 md:grid md:grid-cols-2 md:gap-4">
+        <input id="name"
+            class=" w-full rounded-md bg-transparent px-3 py-1 mb-4 border-[1px] border-inherit border-solid focus:outline-none focus:shadow-[0_0_0_4px_rgba(13,110,253,0.25)]"
+            type="text" placeholder="Search By Name" autocomplete="off">
+        <input id="letter"
+            class=" w-full rounded-md bg-transparent px-3 py-1 mb-4 border-[1px] border-inherit border-solid focus:outline-none focus:shadow-[0_0_0_4px_rgba(13,110,253,0.25)]"
+            type="text" placeholder="Search By First Letter" autocomplete="off">
+    </div>
+    <main class="relative">
+        <section class="loading-screen bg-black absolute inset-y-0 inset-x-0 z-20 flex justify-center items-center"
+            style="display:none;">
+            <i class="fa fa-spinner fa-spin fa-5x text-gray-700"></i>
+        </section>
+        <section>
+            <div class="container meals m-auto p-10 md:grid md:gap-6 md:grid-cols-4">
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="./js/search.js"></script>
+
+</body>
+
+</html>
